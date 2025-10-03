@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* Emovement brand theme */
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a; /* slate-900 */
+
+  /* Brand palette */
+  --brand: #0ea5e9; /* sky-500 */
+  --brand-600: #0284c7; /* sky-600 */
+  --brand-700: #0369a1; /* sky-700 */
+  --accent: #22c55e; /* green-500 */
+  --muted: #f1f5f9; /* slate-100 */
+  --border: #e2e8f0; /* slate-200 */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand: var(--brand);
+  --color-brand-600: var(--brand-600);
+  --color-brand-700: var(--brand-700);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0b1020;
+    --foreground: #e5e7eb; /* slate-200 */
+    --muted: #0f172a;      /* slate-900 */
+    --border: #1f2937;     /* slate-800 */
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Typography tweaks */
+h1 { font-weight: 800; letter-spacing: -0.02em; }
+h2 { font-weight: 700; letter-spacing: -0.01em; }
+h3 { font-weight: 600; }
+
+/* Utility helpers */
+.container-edge {
+  @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-md bg-brand px-5 py-2.5 text-white font-medium shadow-sm hover:bg-brand-600 active:bg-brand-700 transition-colors;
+}
+
+.card {
+  @apply rounded-xl border border-[--color-border] bg-white/60 dark:bg-white/5 backdrop-blur-sm shadow-sm overflow-hidden;
+}
