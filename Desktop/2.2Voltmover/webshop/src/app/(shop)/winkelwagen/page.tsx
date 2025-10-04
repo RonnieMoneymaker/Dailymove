@@ -1,8 +1,11 @@
-export default function CartPage() {
-  // Simple placeholder; wiring to state can be added next
-  const items = [
-    { id: "1", title: "E-step Urban X", price: 749, qty: 1 },
-  ];
+export default function CartPage({ searchParams }: { searchParams?: Record<string, string | string[]> }) {
+  const id = typeof searchParams?.id === 'string' ? searchParams.id : undefined;
+  const qtyParam = typeof searchParams?.qty === 'string' ? parseInt(searchParams.qty, 10) : 1;
+  const qty = Number.isFinite(qtyParam) && qtyParam > 0 ? qtyParam : 1;
+
+  const items = id
+    ? [{ id, title: `E-step Model ${id}`, price: 699 + Number(id) * 50, qty }]
+    : [{ id: "1", title: "E-step Urban X", price: 749, qty: 1 }];
   const total = items.reduce((sum, i) => sum + i.price * i.qty, 0);
 
   return (
