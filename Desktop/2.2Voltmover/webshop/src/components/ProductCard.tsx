@@ -1,56 +1,101 @@
 import Link from "next/link";
 
-export type Product = { id: string; title: string; price: number; imageUrl?: string; category?: string; isNew?: boolean };
+interface Product {
+  id: string;
+  title: string;
+  price: number;
+  category: string;
+  isNew: boolean;
+  image?: string;
+}
 
 export default function ProductCard({ product }: { product: Product }) {
+  const categoryColors = {
+    "E-steps": "from-blue-500 to-indigo-600",
+    "E-bikes": "from-purple-500 to-pink-600",
+    "Accessoires": "from-green-500 to-emerald-600"
+  };
+
+  const categoryColor = categoryColors[product.category as keyof typeof categoryColors] || "from-gray-500 to-gray-600";
+
   return (
     <Link href={`/producten/${product.id}`} className="group block">
-      <div className="card overflow-hidden hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
-        <div className="relative aspect-[4/3] w-full overflow-hidden bg-gradient-to-br from-blue-50/80 to-orange-50/40 dark:from-blue-900/20 dark:to-amber-900/10">
-          {/* Placeholder image */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[var(--brand)] to-blue-600 text-white flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform duration-300">EM</div>
-          </div>
-
+      <div className="h-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden hover:shadow-xl hover:border-transparent transition-all">
+        
+        {/* Product Image */}
+        <div className="aspect-square bg-gray-100 dark:bg-gray-700 relative overflow-hidden">
+          {product.image ? (
+            <>
+              <img 
+                src={product.image}
+                alt={product.title}
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              {/* Gradient overlay on hover */}
+              <div className={`absolute inset-0 bg-gradient-to-t ${categoryColor} opacity-0 group-hover:opacity-20 transition-opacity duration-300`} />
+            </>
+          ) : (
+            <div className="w-full h-full flex items-center justify-center text-6xl">
+              {product.category === "E-steps" && "⚡"}
+              {product.category === "E-bikes" && "🚴"}
+              {product.category === "Accessoires" && "🎒"}
+            </div>
+          )}
+          
           {/* Badges */}
-          <div className="absolute top-4 left-4 flex flex-col gap-2">
-            {(product.isNew !== false) && (
-              <span className="inline-flex items-center rounded-full bg-gradient-to-r from-[var(--accent)] to-orange-500 px-3 py-1 text-xs font-bold text-white shadow-md">Nieuw</span>
-            )}
-            {product.category && (
-              <span className="inline-flex items-center rounded-full bg-[var(--brand)]/90 backdrop-blur-sm px-3 py-1 text-xs font-semibold text-white shadow-sm">
-                {product.category}
-              </span>
-            )}
+          {product.isNew && (
+            <span className={`absolute top-3 left-3 px-3 py-1.5 bg-gradient-to-r ${categoryColor} text-white text-xs font-semibold rounded-lg shadow-lg`}>
+              Nieuw
+            </span>
+          )}
+
+          {/* Quick action on hover */}
+          <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+            <button className="w-full py-2 bg-white text-gray-900 rounded-lg font-semibold text-sm hover:bg-gray-100 transition-colors">
+              Snel bekijken
+            </button>
           </div>
         </div>
 
-        <div className="p-6">
-          <h3 className="font-bold text-lg text-gray-900 dark:text-white line-clamp-2 group-hover:text-[var(--brand)] transition-colors duration-200">{product.title}</h3>
-          <div className="mt-4 flex items-end justify-between">
-            <div className="space-y-1">
-              <div className="flex items-baseline gap-2">
-                <span className="text-2xl font-black text-gray-900 dark:text-white">€{product.price.toLocaleString('nl-NL')}</span>
-                <span className="text-sm text-gray-500 dark:text-gray-400">incl. btw</span>
+        {/* Product Info */}
+        <div className="p-5 space-y-3">
+          <div className={`inline-block px-3 py-1 bg-gradient-to-r ${categoryColor} text-white text-xs font-semibold rounded`}>
+            {product.category}
+          </div>
+          
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
+            {product.title}
+          </h3>
+
+          {/* Price & CTA */}
+          <div className="flex items-center justify-between pt-3 border-t border-gray-100 dark:border-gray-700">
+            <div>
+              <div className="text-2xl font-bold text-gray-900 dark:text-white">
+                €{product.price}
               </div>
-              <div className="flex items-center gap-1 text-amber-400">
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">4.8 (127)</span>
+              <div className="text-xs text-gray-500 dark:text-gray-400">
+                Gratis verzending
               </div>
             </div>
-            <button className="btn-primary text-sm px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-              <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 6M7 13l-1.5 6m0 0h9" />
-              </svg>
-              Toevoegen
-            </button>
+            
+            <svg className="w-6 h-6 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </div>
+
+          {/* Rating */}
+          <div className="flex items-center gap-2 text-sm">
+            <div className="flex">
+              {[1,2,3,4,5].map(i => (
+                <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              ))}
+            </div>
+            <span className="text-gray-600 dark:text-gray-400">4.9</span>
           </div>
         </div>
       </div>
     </Link>
   );
 }
-
-
