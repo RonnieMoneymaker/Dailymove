@@ -1,109 +1,127 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a;
+  --brand: #2563eb;
+  --brand-light: #dbeafe;
   --color-border: #e5e7eb;
-  --color-muted: #f8fafc;
-  /* Refined palette */
-  --brand: #0066cc;
-  --brand-light: #e6f3ff;
-  --accent: #ff6600;
-  --accent-light: #fff3e6;
-  --success: #10b981;
-  --warning: #f59e0b;
-  --error: #ef4444;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0f172a;
-    --foreground: #f1f5f9;
-    --color-border: #334155;
-    --color-muted: #1e293b;
     --brand: #3b82f6;
-    --brand-light: #1e293b;
-    --accent: #f97316;
-    --accent-light: #292524;
-    --success: #22c55e;
-    --warning: #eab308;
-    --error: #f87171;
+    --brand-light: #1e3a8a;
+    --color-border: #374151;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Performance: Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
-/* Design System Utilities */
+/* Optimize font loading */
+@layer base {
+  html {
+    font-display: swap;
+  }
+}
+
+/* Container with edge padding */
 .container-edge {
-  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
 }
 
+/* Gradient text effect */
+.text-gradient {
+  @apply bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text;
+}
+
+/* Gradient hero background */
+.gradient-hero {
+  @apply bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20;
+}
+
+/* Card styles */
 .card {
-  @apply bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300;
+  @apply rounded-2xl border border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800;
 }
 
+/* Button styles */
 .btn-primary {
-  @apply inline-flex items-center justify-center rounded-xl px-6 py-3 text-sm font-semibold text-white shadow-md transition-all duration-200;
-  background-color: var(--brand);
-  @apply hover:shadow-lg hover:scale-[1.02] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500;
+  @apply inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 px-8 py-4 font-bold text-white shadow-lg transition-all hover:shadow-xl hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
 }
 
 .btn-secondary {
-  @apply inline-flex items-center justify-center rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 px-6 py-3 text-sm font-semibold text-gray-900 dark:text-gray-100 shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700 hover:shadow-md transition-all duration-200;
+  @apply inline-flex items-center justify-center rounded-full border-2 border-gray-300 bg-white px-8 py-4 font-bold text-gray-900 shadow-md transition-all hover:border-purple-600 hover:bg-purple-50 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-purple-400 dark:hover:bg-purple-900/30;
 }
 
-.text-brand {
-  color: var(--brand);
-}
-
-.bg-brand {
-  background-color: var(--brand);
-}
-
-.border-brand {
-  border-color: var(--brand);
-}
-
-.bg-muted {
-  background-color: var(--color-muted);
-}
-
-.border-muted {
-  border-color: var(--color-border);
-}
-
-/* Gradient backgrounds */
-.gradient-hero {
-  @apply bg-gradient-to-br from-blue-50/50 via-white to-orange-50/30 dark:from-blue-950/20 dark:via-gray-900 dark:to-orange-950/10;
-}
-
-/* Enhanced utilities */
-.text-gradient {
-  @apply bg-gradient-to-r from-[var(--brand)] to-[var(--accent)] bg-clip-text text-transparent;
-}
-
-.glass {
-  @apply bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border border-white/20 dark:border-gray-800/50;
-}
-
+/* Input styles */
 .input-field {
-  @apply w-full rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-4 py-3 text-sm shadow-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500;
+  @apply w-full rounded-xl border-2 border-gray-200 bg-white px-4 py-3 text-gray-900 transition-all focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:focus:border-blue-400;
 }
 
-.gradient-card {
-  @apply bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900;
+/* Muted background for skeletons */
+.bg-muted {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Improve text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Optimize images */
+img {
+  content-visibility: auto;
+}
+
+/* Loading skeleton animation */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(to right, #f3f4f6 0%, #e5e7eb 20%, #f3f4f6 40%, #f3f4f6 100%);
+  background-size: 1000px 100%;
+}
+
+/* Dark mode shimmer */
+@media (prefers-color-scheme: dark) {
+  .animate-shimmer {
+    background: linear-gradient(to right, #1f2937 0%, #374151 20%, #1f2937 40%, #1f2937 100%);
+    background-size: 1000px 100%;
+  }
+}
+
+/* Focus visible for accessibility */
+*:focus-visible {
+  @apply outline-2 outline-offset-2 outline-blue-500;
+}
+
+/* Improve tap targets on mobile */
+@media (pointer: coarse) {
+  button,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
 }

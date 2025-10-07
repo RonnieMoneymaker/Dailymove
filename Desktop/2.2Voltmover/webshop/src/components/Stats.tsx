@@ -1,3 +1,5 @@
+import AnimatedCounter from "./AnimatedCounter";
+
 export default function Stats() {
   const stats = [
     {
@@ -71,7 +73,21 @@ export default function Stats() {
                     {stat.icon}
                   </div>
                   <div className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
-                    {stat.number}
+                    {index === 0 ? (
+                      <>
+                        <AnimatedCounter end={25000} suffix="+" />
+                      </>
+                    ) : index === 1 ? (
+                      <>
+                        <AnimatedCounter end={50} suffix="+" />
+                      </>
+                    ) : index === 3 ? (
+                      <>
+                        <AnimatedCounter end={4.9} suffix="/5" />
+                      </>
+                    ) : (
+                      stat.number
+                    )}
                   </div>
                   <div className="text-base font-semibold text-gray-900 dark:text-white mb-2">
                     {stat.label}

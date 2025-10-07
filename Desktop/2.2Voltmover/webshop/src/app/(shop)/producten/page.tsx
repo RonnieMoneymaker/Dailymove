@@ -1,4 +1,22 @@
 import ProductCard from "@/components/ProductCard";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "E-bikes & E-steps Kopen - Alle Producten",
+  description: "Bekijk onze volledige collectie premium e-bikes, e-steps en onderdelen. ✓ 2 jaar garantie ✓ Gratis verzending vanaf €50 ✓ 24u levering ✓ Beste prijzen",
+  openGraph: {
+    title: "E-bikes & E-steps Kopen - Alle Producten | Emovement",
+    description: "Bekijk onze volledige collectie premium e-bikes, e-steps en onderdelen.",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1571333250630-f0230c320b6d?w=1200&h=630&fit=crop",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+};
 
 export default function ProductenPage() {
   const products = [
@@ -12,6 +30,8 @@ export default function ProductenPage() {
 
   return (
     <div className="space-y-10">
+      <Breadcrumbs items={[{ label: "Producten" }]} />
+      
       {/* Page hero / toolbar */}
       <section className="relative overflow-hidden rounded-3xl gradient-hero border border-gray-200 dark:border-gray-700 shadow-sm">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/3 via-transparent to-orange-600/3" />
