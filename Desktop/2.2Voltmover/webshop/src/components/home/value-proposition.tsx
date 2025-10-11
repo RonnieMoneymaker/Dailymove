@@ -1,3 +1,5 @@
+"use client";
+
 import { CheckCircle, Truck, Shield, Headphones, Award, Zap } from 'lucide-react'
 
 const benefits = [
@@ -60,22 +62,25 @@ export function ValueProposition() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {benefits.map((benefit, index) => (
-              <div 
-                key={index}
-                className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 transition-all"
-              >
-                <div className={`inline-flex p-3 rounded-lg ${benefit.color} mb-4`}>
-                  <benefit.icon className="h-6 w-6" />
+            {benefits.map((benefit, index) => {
+              const IconComponent = benefit.icon;
+              return (
+                <div 
+                  key={index}
+                  className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 transition-all"
+                >
+                  <div className={`inline-flex p-3 rounded-lg ${benefit.color} mb-4`}>
+                    <IconComponent className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">
+                    {benefit.description}
+                  </p>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
-                  {benefit.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  {benefit.description}
-                </p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

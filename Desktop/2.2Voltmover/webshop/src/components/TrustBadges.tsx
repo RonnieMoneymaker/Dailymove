@@ -1,3 +1,5 @@
+"use client";
+
 export default function TrustBadges() {
   const badges = [
     { icon: "🔒", title: "Veilig Betalen", desc: "SSL beveiligd", color: "blue" },

@@ -1,3 +1,5 @@
+"use client";
+
 import AnimatedCounter from "./AnimatedCounter";
 
 export default function Stats() {
