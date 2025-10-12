@@ -1,11 +1,12 @@
 {
-  "name": "ronnie-website",
+  "name": "ronnie-website-monorepo",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@10.15.1",
   "scripts": {
-    "build": "cd apps/web && pnpm build",
-    "dev": "cd apps/web && pnpm dev",
-    "start": "cd apps/web && pnpm start"
+    "build": "cd apps/web && npm run build",
+    "dev": "cd apps/web && npm run dev",
+    "start": "cd apps/web && npm run start"
   }
 }
 
