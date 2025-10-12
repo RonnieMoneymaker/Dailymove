@@ -1,0 +1,147 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Category {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String?
+  image       String?
+  parentId    String?
+  parent      Category? @relation("CategoryHierarchy", fields: [parentId], references: [id])
+  children    Category[] @relation("CategoryHierarchy")
+  products    Product[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("categories")
+}
+
+model Product {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String
+  shortDescription String?
+  price       Decimal  @db.Decimal(10, 2)
+  comparePrice Decimal? @db.Decimal(10, 2)
+  sku         String   @unique
+  stock       Int      @default(0)
+  inStock     Boolean  @default(true)
+  images      String[]
+  features    Json?
+  specifications Json?
+  categoryId  String
+  category    Category @relation(fields: [categoryId], references: [id])
+  variants    ProductVariant[]
+  reviews     Review[]
+  cartItems   CartItem[]
+  orderItems  OrderItem[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("products")
+}
+
+model ProductVariant {
+  id        String  @id @default(cuid())
+  name      String
+  value     String
+  price     Decimal? @db.Decimal(10, 2)
+  stock     Int     @default(0)
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@map("product_variants")
+}
+
+model Review {
+  id        String   @id @default(cuid())
+  rating    Int      @db.SmallInt
+  title     String?
+  comment   String?
+  name      String
+  email     String
+  verified  Boolean  @default(false)
+  productId String
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("reviews")
+}
+
+model Cart {
+  id        String      @id @default(cuid())
+  sessionId String      @unique
+  items     CartItem[]
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+
+  @@map("carts")
+}
+
+model CartItem {
+  id        String   @id @default(cuid())
+  quantity  Int
+  productId String
+  product   Product  @relation(fields: [productId], references: [id])
+  cartId    String
+  cart      Cart     @relation(fields: [cartId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("cart_items")
+}
+
+model Order {
+  id          String      @id @default(cuid())
+  orderNumber String      @unique
+  status      OrderStatus @default(PENDING)
+  email       String
+  firstName   String
+  lastName    String
+  phone       String?
+  address     Json
+  items       OrderItem[]
+  total       Decimal     @db.Decimal(10, 2)
+  subtotal    Decimal     @db.Decimal(10, 2)
+  tax         Decimal     @db.Decimal(10, 2)
+  shipping    Decimal     @db.Decimal(10, 2)
+  notes       String?
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  @@map("orders")
+}
+
+model OrderItem {
+  id        String  @id @default(cuid())
+  quantity  Int
+  price     Decimal @db.Decimal(10, 2)
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+  orderId   String
+  order     Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@map("order_items")
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  PROCESSING
+  SHIPPED
+  DELIVERED
+  CANCELLED
+  REFUNDED
+}

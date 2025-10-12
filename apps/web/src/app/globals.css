@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Modern VoltMover palette - Clean & Professional */
+    --brand: 217 91% 60%; /* #3B82F6 - Modern blue */
+    --brand-700: 217 91% 50%; /* #2563EB */
+    --accent: 142 76% 36%; /* #059669 - Clean green */
+    --ink: 222 84% 5%; /* #0F172A - Deep dark */
+    --muted: 215 16% 47%; /* #64748B - Neutral gray */
+    --bg: 0 0% 100%; /* #FFFFFF */
+    --bg-alt: 220 14% 96%; /* #F8FAFC - Light gray */
+    --bg-subtle: 217 33% 97%; /* #F1F5F9 - Very light blue */
+    --border: 214 32% 91%; /* #E2E8F0 - Light border */
+    --warning: 45 93% 58%; /* #F59E0B */
+    --danger: 0 84% 60%; /* #EF4444 */
+    --success: 142 76% 36%; /* #059669 */
+
+    /* Map to tailwind tokens */
+    --background: var(--bg);
+    --foreground: var(--ink);
+    --card: var(--bg);
+    --card-foreground: var(--ink);
+    --popover: var(--bg);
+    --popover-foreground: var(--ink);
+    --primary: var(--brand);
+    --primary-foreground: 0 0% 100%;
+    --secondary: var(--bg-subtle);
+    --secondary-foreground: var(--ink);
+    --muted: var(--bg-alt);
+    --muted-foreground: var(--muted);
+    --accent: var(--accent);
+    --accent-foreground: 0 0% 100%;
+    --destructive: var(--danger);
+    --destructive-foreground: 0 0% 100%;
+    --input: var(--border);
+    --ring: var(--brand);
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-lg font-medium transition-all duration-200 shadow-sm hover:shadow-md;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80 px-6 py-3 rounded-lg font-medium transition-all duration-200 border border-border;
+  }
+  
+  .card {
+    @apply bg-card text-card-foreground rounded-xl border border-border shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(135deg, hsl(var(--bg)) 0%, hsl(var(--bg-subtle)) 100%);
+  }
+}

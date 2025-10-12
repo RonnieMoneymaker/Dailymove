@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="/shop">
+            <i class="bi bi-bicycle text-primary me-2"></i>
+            <%= siteSettings.site_name || 'Fiets Webshop' %>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/shop">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/shop/products">Alle Producten</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown">
+                        Categorieën
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/shop/category/fietsen">Fietsen</a></li>
+                        <li><a class="dropdown-item" href="/shop/category/elektrische-fietsen">Elektrische Fietsen</a></li>
+                        <li><a class="dropdown-item" href="/shop/category/mountainbikes">Mountainbikes</a></li>
+                        <li><a class="dropdown-item" href="/shop/category/racefietsen">Racefietsen</a></li>
+                        <li><a class="dropdown-item" href="/shop/category/stadsfietsen">Stadsfietsen</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/shop/category/onderdelen">Onderdelen</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <div class="d-flex align-items-center gap-3">
+                <!-- Search -->
+                <form class="d-flex" method="GET" action="/shop/products">
+                    <div class="input-group">
+                        <input class="form-control form-control-sm" type="search" name="search" placeholder="Zoeken..." aria-label="Search">
+                        <button class="btn btn-outline-secondary btn-sm" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- Cart (placeholder) -->
+                <a href="#" class="btn btn-outline-primary position-relative">
+                    <i class="bi bi-cart3"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        0
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>

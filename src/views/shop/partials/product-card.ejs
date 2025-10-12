@@ -1,0 +1,77 @@
+<div class="product-card">
+    <a href="/shop/product/<%= product.slug %>" class="text-decoration-none text-dark">
+        <div class="product-image">
+            <% if (product.primary_image) { %>
+                <img src="<%= product.primary_image %>" alt="<%= product.name %>" class="img-fluid">
+            <% } else { %>
+                <div class="placeholder-image">
+                    <i class="bi bi-bicycle"></i>
+                </div>
+            <% } %>
+            
+            <% if (product.sale_price) { %>
+                <span class="sale-badge">Sale</span>
+            <% } %>
+            
+            <% if (product.featured) { %>
+                <span class="featured-badge">Featured</span>
+            <% } %>
+            
+            <% if (product.manage_stock && product.stock_quantity <= 0) { %>
+                <span class="stock-badge out-of-stock">Uitverkocht</span>
+            <% } else if (product.manage_stock && product.stock_quantity <= 5) { %>
+                <span class="stock-badge low-stock">Laatste <%= product.stock_quantity %></span>
+            <% } %>
+        </div>
+        
+        <div class="product-info">
+            <% if (product.category_name) { %>
+                <small class="product-category text-muted"><%= product.category_name %></small>
+            <% } %>
+            
+            <h6 class="product-name"><%= product.name %></h6>
+            
+            <% if (product.short_description) { %>
+                <p class="product-description text-muted">
+                    <%= product.short_description.length > 80 ? product.short_description.substring(0, 80) + '...' : product.short_description %>
+                </p>
+            <% } %>
+            
+            <div class="product-price">
+                <% if (product.sale_price) { %>
+                    <span class="original-price text-muted text-decoration-line-through">
+                        €<%= parseFloat(product.price).toFixed(2) %>
+                    </span>
+                    <span class="sale-price text-danger fw-bold">
+                        €<%= parseFloat(product.sale_price).toFixed(2) %>
+                    </span>
+                <% } else { %>
+                    <span class="price fw-bold">
+                        €<%= parseFloat(product.price).toFixed(2) %>
+                    </span>
+                <% } %>
+            </div>
+            
+            <% if (product.brand) { %>
+                <small class="product-brand text-muted">
+                    <i class="bi bi-tag me-1"></i>
+                    <%= product.brand %>
+                </small>
+            <% } %>
+        </div>
+    </a>
+    
+    <div class="product-actions">
+        <% if (!product.manage_stock || product.stock_quantity > 0) { %>
+            <button class="btn btn-primary btn-sm w-100" onclick="addToCart(<%= product.id %>)">
+                <i class="bi bi-cart-plus me-1"></i>
+                Toevoegen
+            </button>
+        <% } else { %>
+            <button class="btn btn-secondary btn-sm w-100" disabled>
+                <i class="bi bi-x-circle me-1"></i>
+                Uitverkocht
+            </button>
+        <% } %>
+    </div>
+</div>

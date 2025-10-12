@@ -1,0 +1,854 @@
+[
+  {
+    "id": "1",
+    "name": "Amsterdam",
+    "slug": "amsterdam",
+    "province": "Noord-Holland",
+    "country": "Nederland",
+    "population": 872757,
+    "description": "Amsterdam is de hoofdstad van Nederland en een van de meest fiets- en E-step vriendelijke steden ter wereld.",
+    "longDescription": "Amsterdam staat bekend als de fietshoofstad van de wereld, en E-steps passen perfect in het mobiliteitsprofiel van de stad. Met zijn uitgebreide fietspadnetwerk en compacte stadscentrum is Amsterdam de ideale omgeving voor elektrische mobiliteit.\n\nDe stad heeft een progressief beleid ten aanzien van elektrische voertuigen en biedt uitstekende infrastructuur voor E-steps en E-bikes. Veel Amsterdammers gebruiken deze voertuigen voor hun dagelijkse woon-werkverkeer en als alternatief voor het openbaar vervoer.\n\nVoltMover levert dagelijks aan honderden klanten in Amsterdam en omgeving. Onze producten zijn perfect geschikt voor de Amsterdamse straten, van de grachten van het centrum tot de moderne wijken in Noord en Zuidoost.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot MAX G30LP",
+      "VanMoof S5"
+    ],
+    "localFeatures": [
+      "Uitgebreid fietspadnetwerk",
+      "E-step vriendelijke wetgeving",
+      "Veel oplaadpunten",
+      "Compacte afstanden",
+      "Goed openbaar vervoer als backup"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": true,
+    "storeAddress": "Nieuwezijds Voorburgwal 123, 1012 RJ Amsterdam",
+    "coordinates": {
+      "lat": 52.3676,
+      "lng": 4.9041
+    }
+  },
+  {
+    "id": "2",
+    "name": "Rotterdam",
+    "slug": "rotterdam",
+    "province": "Zuid-Holland",
+    "country": "Nederland",
+    "population": 651446,
+    "description": "Rotterdam is een moderne havenstad met uitstekende infrastructuur voor elektrische mobiliteit.",
+    "longDescription": "Rotterdam, de grootste haven van Europa, is een moderne stad die voorop loopt in duurzame mobiliteit. De stad heeft geïnvesteerd in uitstekende infrastructuur voor E-steps en E-bikes, met brede fietspaden en moderne verkeerssystemen.\n\nAls innovatieve stad omarmt Rotterdam nieuwe technologieën en mobiliteitsoplossingen. E-steps zijn hier populair voor zowel woon-werkverkeer als recreatieve ritten langs de Maas en door het moderne stadscentrum.\n\nVoltMover heeft een sterke aanwezigheid in Rotterdam met snelle levering en uitstekende service. Onze producten zijn ideaal voor de Rotterdamse context, van het drukke Centrum tot de rustige wijken in de buitengebieden.",
+    "popularProducts": [
+      "Segway Ninebot F2 Pro",
+      "Kaabo Mantis 8 Pro",
+      "Gazelle Ultimate C380"
+    ],
+    "localFeatures": [
+      "Moderne infrastructuur",
+      "Brede fietspaden",
+      "Innovatieve verkeerssystemen",
+      "Haven en waterfront routes",
+      "Duurzaamheidsfocus"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": true,
+    "storeAddress": "Coolsingel 456, 3012 AG Rotterdam",
+    "coordinates": {
+      "lat": 52.0907,
+      "lng": 4.4777
+    }
+  },
+  {
+    "id": "3",
+    "name": "Den Haag",
+    "slug": "den-haag",
+    "province": "Zuid-Holland",
+    "country": "Nederland",
+    "population": 548320,
+    "description": "Den Haag, de politieke hoofdstad, combineert historie met moderne mobiliteitsoplossingen.",
+    "longDescription": "Den Haag, zetel van de Nederlandse regering en internationale organisaties, is een stad die traditie combineert met innovatie. De stad heeft een uitgebreid netwerk van fietspaden en is zeer geschikt voor E-steps en E-bikes.\n\nMet zijn mix van historische wijken, moderne kantoorgebieden en de nabijheid van de kust, biedt Den Haag diverse scenario's voor elektrische mobiliteit. Veel ambtenaren en internationale professionals gebruiken E-steps voor hun dagelijkse verplaatsingen.\n\nVoltMover serveert de Haagse markt met een breed assortiment dat past bij de diverse behoeften van de stad. Van compacte modellen voor het stadscentrum tot krachtige E-bikes voor ritten naar Scheveningen.",
+    "popularProducts": [
+      "Pure Air Pro",
+      "Xiaomi Mi Electric Scooter 3",
+      "VanMoof X3"
+    ],
+    "localFeatures": [
+      "Politieke en internationale sfeer",
+      "Historisch centrum",
+      "Nabijheid van strand",
+      "Goede verbindingen",
+      "Diverse wijken"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": false,
+    "coordinates": {
+      "lat": 52.0705,
+      "lng": 4.3007
+    }
+  },
+  {
+    "id": "4",
+    "name": "Utrecht",
+    "slug": "utrecht",
+    "province": "Utrecht",
+    "country": "Nederland",
+    "population": 361699,
+    "description": "Utrecht is het hart van Nederland met een compact centrum perfect voor E-steps en E-bikes.",
+    "longDescription": "Utrecht, gelegen in het hart van Nederland, is een compacte universitetsstad met een rijke geschiedenis en een jong, dynamisch karakter. De stad is bijzonder geschikt voor elektrische mobiliteit dankzij zijn compacte opzet en uitstekende infrastructuur.\n\nHet historische centrum met zijn unieke werfkelders en de moderne Uithof campus maken Utrecht tot een diverse stad waar E-steps en E-bikes uitstekend functioneren. De stad investeert actief in duurzame mobiliteit en heeft een van de beste fietsinfrastructuren van Nederland.\n\nVoltMover heeft veel klanten in Utrecht, van studenten tot professionals. Onze producten zijn perfect geschikt voor de korte afstanden in de stad en de verbindingen tussen verschillende wijken en de universiteit.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Inokim Quick 4",
+      "Gazelle CityZen C8"
+    ],
+    "localFeatures": [
+      "Compact stadscentrum",
+      "Universitaire atmosfeer",
+      "Uitstekende fietsinfrastructuur",
+      "Centraal gelegen",
+      "Jong en dynamisch"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": true,
+    "storeAddress": "Vredenburg 789, 3511 BD Utrecht",
+    "coordinates": {
+      "lat": 52.0907,
+      "lng": 5.1214
+    }
+  },
+  {
+    "id": "5",
+    "name": "Eindhoven",
+    "slug": "eindhoven",
+    "province": "Noord-Brabant",
+    "country": "Nederland",
+    "population": 234456,
+    "description": "Eindhoven, de technologiestad van Nederland, omarmt innovatieve mobiliteitsoplossingen.",
+    "longDescription": "Eindhoven staat bekend als de technologiehoofstad van Nederland en de geboorteplaats van Philips. Deze innovatieve stad omarmt nieuwe technologieën, inclusief elektrische mobiliteit, met open armen.\n\nMet zijn focus op technologie en innovatie is Eindhoven een ideale omgeving voor E-steps en E-bikes. De stad heeft geïnvesteerd in slimme verkeerssystemen en duurzame mobiliteitsoplossingen die perfect aansluiten bij de high-tech industrie.\n\nVoltMover heeft een sterke aanwezigheid in Eindhoven, waar onze technologisch geavanceerde producten perfect passen bij de innovatieve geest van de stad. Van de TU/e campus tot het stadscentrum en de high-tech bedrijven.",
+    "popularProducts": [
+      "Segway Ninebot MAX G30LP",
+      "Kaabo Mantis 8 Pro",
+      "Dualtron Mini"
+    ],
+    "localFeatures": [
+      "Technologie en innovatie focus",
+      "High-tech industrie",
+      "Moderne infrastructuur",
+      "Universitaire campus",
+      "Duurzaamheidsinitiatieven"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": false,
+    "coordinates": {
+      "lat": 51.4416,
+      "lng": 5.4697
+    }
+  },
+  {
+    "id": "6",
+    "name": "Tilburg",
+    "slug": "tilburg",
+    "province": "Noord-Brabant",
+    "country": "Nederland",
+    "population": 219800,
+    "description": "Tilburg is een levendige studentenstad met groeiende interesse in elektrische mobiliteit.",
+    "longDescription": "Tilburg is een dynamische stad in het hart van Noord-Brabant, bekend om zijn universiteit en levendige cultuurscene. De stad heeft de afgelopen jaren flink geïnvesteerd in duurzame mobiliteit en fietsinfrastructuur.\n\nMet zijn mix van studenten, professionals en gezinnen biedt Tilburg een diverse markt voor elektrische mobiliteit. De stad is compact genoeg voor E-steps maar heeft ook uitstekende verbindingen naar omliggende gebieden die ideaal zijn voor E-bikes.\n\nVoltMover serveert de Tilburgse markt met producten die passen bij de diverse behoeften van de stad. Van betaalbare modellen voor studenten tot premium E-bikes voor professionals en gezinnen.",
+    "popularProducts": [
+      "Pure Air Pro",
+      "Xiaomi Mi Electric Scooter 3",
+      "Gazelle Arroyo C8"
+    ],
+    "localFeatures": [
+      "Universitaire atmosfeer",
+      "Culturele diversiteit",
+      "Groeiende fietsinfrastructuur",
+      "Centrale ligging Brabant",
+      "Mix van bewoners"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": false,
+    "coordinates": {
+      "lat": 51.5656,
+      "lng": 5.0913
+    }
+  },
+  {
+    "id": "7",
+    "name": "Groningen",
+    "slug": "groningen",
+    "province": "Groningen",
+    "country": "Nederland",
+    "population": 233273,
+    "description": "Groningen is een mooie stad in Groningen waar VoltMover graag levert.",
+    "longDescription": "Groningen is een levendige stad in de provincie Groningen. Met 233273 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": false,
+    "storeAddress": "Hoofdstraat 473, Groningen",
+    "coordinates": {
+      "lat": 53.36146171826825,
+      "lng": 4.620136443538989
+    }
+  },
+  {
+    "id": "8",
+    "name": "Almere",
+    "slug": "almere",
+    "province": "Flevoland",
+    "country": "Nederland",
+    "population": 214715,
+    "description": "Almere is een mooie stad in Flevoland waar VoltMover graag levert.",
+    "longDescription": "Almere is een levendige stad in de provincie Flevoland. Met 214715 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": false,
+    "coordinates": {
+      "lat": 52.73632546805082,
+      "lng": 4.50208848810499
+    }
+  },
+  {
+    "id": "9",
+    "name": "Breda",
+    "slug": "breda",
+    "province": "Noord-Brabant",
+    "country": "Nederland",
+    "population": 184403,
+    "description": "Breda is een mooie stad in Noord-Brabant waar VoltMover graag levert.",
+    "longDescription": "Breda is een levendige stad in de provincie Noord-Brabant. Met 184403 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": false,
+    "coordinates": {
+      "lat": 52.99174846104861,
+      "lng": 4.525808135755281
+    }
+  },
+  {
+    "id": "10",
+    "name": "Nijmegen",
+    "slug": "nijmegen",
+    "province": "Gelderland",
+    "country": "Nederland",
+    "population": 177659,
+    "description": "Nijmegen is een mooie stad in Gelderland waar VoltMover graag levert.",
+    "longDescription": "Nijmegen is een levendige stad in de provincie Gelderland. Met 177659 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": false,
+    "coordinates": {
+      "lat": 52.5834181234367,
+      "lng": 6.598937322261126
+    }
+  },
+  {
+    "id": "11",
+    "name": "Enschede",
+    "slug": "enschede",
+    "province": "Overijssel",
+    "country": "Nederland",
+    "population": 158986,
+    "description": "Enschede is een mooie stad in Overijssel waar VoltMover graag levert.",
+    "longDescription": "Enschede is een levendige stad in de provincie Overijssel. Met 158986 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": false,
+    "coordinates": {
+      "lat": 52.74920196516176,
+      "lng": 4.501242408361025
+    }
+  },
+  {
+    "id": "12",
+    "name": "Apeldoorn",
+    "slug": "apeldoorn",
+    "province": "Gelderland",
+    "country": "Nederland",
+    "population": 164222,
+    "description": "Apeldoorn is een mooie stad in Gelderland waar VoltMover graag levert.",
+    "longDescription": "Apeldoorn is een levendige stad in de provincie Gelderland. Met 164222 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": false,
+    "coordinates": {
+      "lat": 53.025247458126685,
+      "lng": 4.452675293470285
+    }
+  },
+  {
+    "id": "13",
+    "name": "Haarlem",
+    "slug": "haarlem",
+    "province": "Noord-Holland",
+    "country": "Nederland",
+    "population": 162961,
+    "description": "Haarlem is een mooie stad in Noord-Holland waar VoltMover graag levert.",
+    "longDescription": "Haarlem is een levendige stad in de provincie Noord-Holland. Met 162961 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": true,
+    "coordinates": {
+      "lat": 53.14328447065236,
+      "lng": 6.12637465960931
+    }
+  },
+  {
+    "id": "14",
+    "name": "Amersfoort",
+    "slug": "amersfoort",
+    "province": "Utrecht",
+    "country": "Nederland",
+    "population": 157279,
+    "description": "Amersfoort is een mooie stad in Utrecht waar VoltMover graag levert.",
+    "longDescription": "Amersfoort is een levendige stad in de provincie Utrecht. Met 157279 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": false,
+    "storeAddress": "Hoofdstraat 427, Amersfoort",
+    "coordinates": {
+      "lat": 52.78584657150193,
+      "lng": 6.602157059345142
+    }
+  },
+  {
+    "id": "15",
+    "name": "Zaanstad",
+    "slug": "zaanstad",
+    "province": "Noord-Holland",
+    "country": "Nederland",
+    "population": 156901,
+    "description": "Zaanstad is een mooie stad in Noord-Holland waar VoltMover graag levert.",
+    "longDescription": "Zaanstad is een levendige stad in de provincie Noord-Holland. Met 156901 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": false,
+    "storeAddress": "Hoofdstraat 419, Zaanstad",
+    "coordinates": {
+      "lat": 52.039833697371485,
+      "lng": 6.601650497025263
+    }
+  },
+  {
+    "id": "16",
+    "name": "Haarlemmermeer",
+    "slug": "haarlemmermeer",
+    "province": "Noord-Holland",
+    "country": "Nederland",
+    "population": 156039,
+    "description": "Haarlemmermeer is een mooie stad in Noord-Holland waar VoltMover graag levert.",
+    "longDescription": "Haarlemmermeer is een levendige stad in de provincie Noord-Holland. Met 156039 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": false,
+    "coordinates": {
+      "lat": 52.95384289359024,
+      "lng": 6.327269350350355
+    }
+  },
+  {
+    "id": "17",
+    "name": "Arnhem",
+    "slug": "arnhem",
+    "province": "Gelderland",
+    "country": "Nederland",
+    "population": 161368,
+    "description": "Arnhem is een mooie stad in Gelderland waar VoltMover graag levert.",
+    "longDescription": "Arnhem is een levendige stad in de provincie Gelderland. Met 161368 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": true,
+    "coordinates": {
+      "lat": 52.02144545495392,
+      "lng": 5.588182800358725
+    }
+  },
+  {
+    "id": "18",
+    "name": "Zoetermeer",
+    "slug": "zoetermeer",
+    "province": "Zuid-Holland",
+    "country": "Nederland",
+    "population": 125283,
+    "description": "Zoetermeer is een mooie stad in Zuid-Holland waar VoltMover graag levert.",
+    "longDescription": "Zoetermeer is een levendige stad in de provincie Zuid-Holland. Met 125283 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": false,
+    "coordinates": {
+      "lat": 52.78596602724088,
+      "lng": 6.607890783676866
+    }
+  },
+  {
+    "id": "19",
+    "name": "Zwolle",
+    "slug": "zwolle",
+    "province": "Overijssel",
+    "country": "Nederland",
+    "population": 130592,
+    "description": "Zwolle is een mooie stad in Overijssel waar VoltMover graag levert.",
+    "longDescription": "Zwolle is een levendige stad in de provincie Overijssel. Met 130592 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": false,
+    "coordinates": {
+      "lat": 53.487208590766876,
+      "lng": 5.333485224909124
+    }
+  },
+  {
+    "id": "20",
+    "name": "Maastricht",
+    "slug": "maastricht",
+    "province": "Limburg",
+    "country": "Nederland",
+    "population": 121558,
+    "description": "Maastricht is een mooie stad in Limburg waar VoltMover graag levert.",
+    "longDescription": "Maastricht is een levendige stad in de provincie Limburg. Met 121558 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Vandaag besteld, morgen in huis",
+    "hasStore": false,
+    "storeAddress": "Hoofdstraat 196, Maastricht",
+    "coordinates": {
+      "lat": 52.17429202933008,
+      "lng": 5.995277343477182
+    }
+  },
+  {
+    "id": "21",
+    "name": "Dordrecht",
+    "slug": "dordrecht",
+    "province": "Zuid-Holland",
+    "country": "Nederland",
+    "population": 119300,
+    "description": "Dordrecht is een mooie stad in Zuid-Holland waar VoltMover graag levert.",
+    "longDescription": "Dordrecht is een levendige stad in de provincie Zuid-Holland. Met 119300 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Binnen 2 werkdagen geleverd",
+    "hasStore": false,
+    "coordinates": {
+      "lat": 52.8660860510437,
+      "lng": 5.251498105367451
+    }
+  },
+  {
+    "id": "22",
+    "name": "Leiden",
+    "slug": "leiden",
+    "province": "Zuid-Holland",
+    "country": "Nederland",
+    "population": 125174,
+    "description": "Leiden is een mooie stad in Zuid-Holland waar VoltMover graag levert.",
+    "longDescription": "Leiden is een levendige stad in de provincie Zuid-Holland. Met 125174 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Binnen 2 werkdagen geleverd",
+    "hasStore": false,
+    "coordinates": {
+      "lat": 53.364395183930164,
+      "lng": 6.2236072224362555
+    }
+  },
+  {
+    "id": "23",
+    "name": "Alphen aan den Rijn",
+    "slug": "alphen-aan-den-rijn",
+    "province": "Zuid-Holland",
+    "country": "Nederland",
+    "population": 111889,
+    "description": "Alphen aan den Rijn is een mooie stad in Zuid-Holland waar VoltMover graag levert.",
+    "longDescription": "Alphen aan den Rijn is een levendige stad in de provincie Zuid-Holland. Met 111889 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Binnen 2 werkdagen geleverd",
+    "hasStore": true,
+    "coordinates": {
+      "lat": 53.194086272819426,
+      "lng": 4.413361890278731
+    }
+  },
+  {
+    "id": "24",
+    "name": "Emmen",
+    "slug": "emmen",
+    "province": "Drenthe",
+    "country": "Nederland",
+    "population": 107055,
+    "description": "Emmen is een mooie stad in Drenthe waar VoltMover graag levert.",
+    "longDescription": "Emmen is een levendige stad in de provincie Drenthe. Met 107055 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Binnen 2 werkdagen geleverd",
+    "hasStore": false,
+    "coordinates": {
+      "lat": 52.725860531579144,
+      "lng": 5.874048144074015
+    }
+  },
+  {
+    "id": "25",
+    "name": "Deventer",
+    "slug": "deventer",
+    "province": "Overijssel",
+    "country": "Nederland",
+    "population": 100718,
+    "description": "Deventer is een mooie stad in Overijssel waar VoltMover graag levert.",
+    "longDescription": "Deventer is een levendige stad in de provincie Overijssel. Met 100718 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Binnen 2 werkdagen geleverd",
+    "hasStore": true,
+    "coordinates": {
+      "lat": 52.81677321639729,
+      "lng": 6.195293922847382
+    }
+  },
+  {
+    "id": "26",
+    "name": "Leeuwarden",
+    "slug": "leeuwarden",
+    "province": "Friesland",
+    "country": "Nederland",
+    "population": 124058,
+    "description": "Leeuwarden is een mooie stad in Friesland waar VoltMover graag levert.",
+    "longDescription": "Leeuwarden is een levendige stad in de provincie Friesland. Met 124058 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Binnen 2 werkdagen geleverd",
+    "hasStore": true,
+    "coordinates": {
+      "lat": 52.498733374471776,
+      "lng": 5.5649318053549095
+    }
+  },
+  {
+    "id": "27",
+    "name": "Alkmaar",
+    "slug": "alkmaar",
+    "province": "Noord-Holland",
+    "country": "Nederland",
+    "population": 109896,
+    "description": "Alkmaar is een mooie stad in Noord-Holland waar VoltMover graag levert.",
+    "longDescription": "Alkmaar is een levendige stad in de provincie Noord-Holland. Met 109896 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Binnen 2 werkdagen geleverd",
+    "hasStore": false,
+    "storeAddress": "Hoofdstraat 436, Alkmaar",
+    "coordinates": {
+      "lat": 52.159867023721766,
+      "lng": 4.7412896084613525
+    }
+  },
+  {
+    "id": "28",
+    "name": "Hilversum",
+    "slug": "hilversum",
+    "province": "Noord-Holland",
+    "country": "Nederland",
+    "population": 92407,
+    "description": "Hilversum is een mooie stad in Noord-Holland waar VoltMover graag levert.",
+    "longDescription": "Hilversum is een levendige stad in de provincie Noord-Holland. Met 92407 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Binnen 2 werkdagen geleverd",
+    "hasStore": false,
+    "coordinates": {
+      "lat": 52.13517740126976,
+      "lng": 5.8707807663382985
+    }
+  },
+  {
+    "id": "29",
+    "name": "Oss",
+    "slug": "oss",
+    "province": "Noord-Brabant",
+    "country": "Nederland",
+    "population": 91932,
+    "description": "Oss is een mooie stad in Noord-Brabant waar VoltMover graag levert.",
+    "longDescription": "Oss is een levendige stad in de provincie Noord-Brabant. Met 91932 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Binnen 2 werkdagen geleverd",
+    "hasStore": false,
+    "coordinates": {
+      "lat": 52.16390707642676,
+      "lng": 4.717927018564655
+    }
+  },
+  {
+    "id": "30",
+    "name": "Roosendaal",
+    "slug": "roosendaal",
+    "province": "Noord-Brabant",
+    "country": "Nederland",
+    "population": 77226,
+    "description": "Roosendaal is een mooie stad in Noord-Brabant waar VoltMover graag levert.",
+    "longDescription": "Roosendaal is een levendige stad in de provincie Noord-Brabant. Met 77226 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Binnen 2 werkdagen geleverd",
+    "hasStore": false,
+    "coordinates": {
+      "lat": 52.99991869533208,
+      "lng": 4.497959793287812
+    }
+  },
+  {
+    "id": "31",
+    "name": "Purmerend",
+    "slug": "purmerend",
+    "province": "Noord-Holland",
+    "country": "Nederland",
+    "population": 81233,
+    "description": "Purmerend is een mooie stad in Noord-Holland waar VoltMover graag levert.",
+    "longDescription": "Purmerend is een levendige stad in de provincie Noord-Holland. Met 81233 inwoners biedt de stad uitstekende mogelijkheden voor elektrische mobiliteit. VoltMover levert hier dagelijks aan tevreden klanten die kiezen voor duurzame en efficiënte vervoersoplossingen.\n\nDe stad heeft goede infrastructuur voor E-steps en E-bikes, met groeiende acceptatie van elektrische mobiliteit onder de bevolking. Onze producten zijn perfect geschikt voor de lokale omstandigheden en behoeften.",
+    "popularProducts": [
+      "Xiaomi Mi Electric Scooter 4 Pro",
+      "Segway Ninebot F2 Pro",
+      "Pure Air Pro"
+    ],
+    "localFeatures": [
+      "Groeiende e-mobility acceptatie",
+      "Goede infrastructuur",
+      "Diverse bevolking",
+      "Lokale service beschikbaar"
+    ],
+    "deliveryTime": "Binnen 2 werkdagen geleverd",
+    "hasStore": false,
+    "storeAddress": "Hoofdstraat 339, Purmerend",
+    "coordinates": {
+      "lat": 52.195250021070784,
+      "lng": 4.3401904942843545
+    }
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "1",
+    "name": "E-steps",
+    "slug": "e-steps",
+    "description": "Premium elektrische steps voor elke behoefte",
+    "longDescription": "Ontdek onze uitgebreide collectie E-steps van topmerken zoals Xiaomi, Segway, Kaabo en Pure. Van compacte modellen voor de stad tot krachtige off-road varianten.",
+    "image": "/images/categories/escooter.jpg",
+    "productCount": 51,
+    "isPopular": true,
+    "isFeatured": true
+  },
+  {
+    "id": "2",
+    "name": "E-bikes",
+    "slug": "e-bikes",
+    "description": "Elektrische fietsen voor comfort en prestaties",
+    "longDescription": "Van stadsfiets tot mountainbike - onze e-bikes combineren Nederlandse kwaliteit met moderne technologie. Ideaal voor woon-werkverkeer en recreatie.",
+    "image": "/images/categories/ebike.jpg",
+    "productCount": 44,
+    "isPopular": true,
+    "isFeatured": true
+  },
+  {
+    "id": "3",
+    "name": "Accessoires",
+    "slug": "accessoires",
+    "description": "Veiligheid en comfort accessoires",
+    "longDescription": "Compleet je e-mobility setup met onze selectie van helmen, sloten, verlichting en andere essentiële accessoires voor veilig rijden.",
+    "image": "/images/categories/accessories.jpg",
+    "productCount": 45,
+    "isPopular": true,
+    "isFeatured": false
+  },
+  {
+    "id": "4",
+    "name": "Onderdelen",
+    "slug": "onderdelen",
+    "description": "Reserveonderdelen en upgrades",
+    "longDescription": "Houd je e-step of e-bike in topconditie met onze originele onderdelen en upgrade componenten van bekende merken.",
+    "image": "/images/categories/parts.jpg",
+    "productCount": 45,
+    "isPopular": false,
+    "isFeatured": false
+  }
+]

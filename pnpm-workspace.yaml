@@ -1,0 +1,12 @@
+packages:
+  - apps/*
+  - packages/*
+
+ignoredBuiltDependencies:
+  - '@prisma/client'
+  - '@prisma/engines'
+  - better-sqlite3
+  - esbuild
+  - prisma
+  - sqlite3
+  - unrs-resolver
