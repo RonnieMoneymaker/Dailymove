@@ -6,12 +6,6 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  output: 'standalone',
-  experimental: {
-    serverActions: {
-      allowedOrigins: ['localhost:4004', 'ronniewebsite.com', '*.vercel.app']
-    }
-  },
   images: {
     remotePatterns: [
       {
